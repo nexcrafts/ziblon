@@ -184,8 +184,8 @@ const C = {
   whatsapp: "923253404267",
   note: "Male to male service",
   timings: "",                 // abhi pata nahi. Khali = bot WhatsApp pe pochne ko kahega
-  slotStart: null,             // booking time slots ke liye, e.g. 13 (1 PM). null = time free-text rahega
-  slotEnd: null,               // e.g. 22 (10 PM)
+  slotStart: 12,               // booking dropdown ka pehla slot (12 = 12 PM). ABHI ASSUMED HAI, asli timings aane pe badlo
+  slotEnd: 22,                 // aakhri slot (22 = 10 PM). null/null karoge to time free-text ban jayega
   apiUrl: "",                  // Claude backend URL (optional). Khali = sirf built-in replies
   deals: [
     { no: 1, price: 4499,  items: ["Full body massage", "Professional hair cut", "Professional beard", "Face cleansing"], note: "Male to male" },
